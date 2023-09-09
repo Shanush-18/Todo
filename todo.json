@@ -1,0 +1,83 @@
+{
+  "todos": [
+    {
+      "title": "Service Update",
+      "status": "Completed",
+      "startDate": "2023-04-08",
+      "endDate": "2023-04-08",
+      "description": "qeqwe",
+      "id": 1
+    },
+    {
+      "title": "121m,",
+      "status": "Todo",
+      "startDate": "2023-04-08",
+      "endDate": "2023-04-08",
+      "description": "rtert",
+      "type": "work",
+      "id": 2
+    },
+    {
+      "title": "qwe",
+      "status": "Todo",
+      "startDate": "2023-04-08",
+      "endDate": "",
+      "description": "qqqqqqqqqqqqqqqq",
+      "id": 3
+    },
+    {
+      "title": "qe",
+      "status": "Completed",
+      "startDate": "2023-04-08",
+      "endDate": "",
+      "description": "qwe",
+      "type": "work",
+      "id": 4
+    },
+    {
+      "title": "qweq",
+      "status": "In Progress",
+      "startDate": "2023-04-08",
+      "endDate": "",
+      "description": "adsd",
+      "type": "activity",
+      "id": 6
+    },
+    {
+      "title": "Max Shopping",
+      "status": "Completed",
+      "startDate": "2023-04-08",
+      "endDate": "",
+      "description": "Bought T-Shirt",
+      "type": "shopping",
+      "id": 8
+    },
+    {
+      "title": "fsdf",
+      "status": "In Progress",
+      "startDate": "2023-04-08",
+      "endDate": "",
+      "description": "sdf",
+      "type": "work",
+      "id": 9
+    },
+    {
+      "title": "qwe",
+      "status": "Completed",
+      "startDate": "2023-04-05",
+      "endDate": "",
+      "description": "",
+      "type": "home",
+      "id": 10
+    },
+    {
+      "title": "Shunnail-E-APP",
+      "status": "In Progress",
+      "startDate": "2023-08-13",
+      "endDate": "2023-10-29",
+      "description": "Improve Shez App",
+      "type": "work",
+      "id": 11
+    }
+  ]
+}

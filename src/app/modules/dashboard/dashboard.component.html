@@ -1,0 +1,10 @@
+<div class="d-flex">
+    <ng-container *ngFor="let tile of tiles">
+        <div class="dashboard-tile-wrapper p-2" [routerLink]="tile?.path">
+            <div class="d-flex align-items-center mr-2">
+                <span class="material-icons filled-bg-icon">{{tile?.icon}}</span>
+                <span class="todo-title">{{tile?.title}}</span>
+            </div>
+        </div>
+    </ng-container>
+</div>

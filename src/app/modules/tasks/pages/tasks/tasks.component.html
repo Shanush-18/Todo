@@ -1,0 +1,30 @@
+<div class="task-wrapper container-fluid">
+    <ng-container *ngFor="let category of categories">
+        <div [routerLink]="category?.path" [queryParams]="{category:category?.title}" class="category">
+            <div class="card-content">
+                <div>
+                    <span [ngStyle]="{'background-color':category?.bgClr}"
+                        class="material-icons">{{category?.icon}}</span>
+                </div>
+                <div class="my-2">
+                    <span class="category-title">
+                        {{category?.title}}
+                    </span>
+                </div>
+            </div>
+        </div>
+    </ng-container>
+    <!-- <div class="category">
+        <div class="card-content">
+            <div>
+                <span
+                    class="material-icons">note_add</span>
+            </div>
+            <div class="my-2">
+                <span class="category-title">
+                        Add category
+                </span>
+            </div>
+        </div>
+    </div> -->
+</div>

@@ -1,0 +1,38 @@
+.todo-popup-back-drop {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.507);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 50;
+}
+
+.add-task-wrapper {
+    position: fixed;
+    background-color: #fff;
+    width: 53vw;
+    min-height: 52vh;
+    max-height: 80vh;
+    overflow: auto;
+    z-index: 51;
+    left: 25vw;
+    border-radius: 10px;
+
+}
+
+.add-task-header {
+    border-bottom: 1px solid #e0dfdf;
+    position: sticky;
+    top: 0;
+    background: #fff;
+}
+
+
+.add-task-footer{
+    position: sticky;
+    bottom: 0;
+    background: #fff;
+    border-top: 1px solid #ebebeb;
+
+}

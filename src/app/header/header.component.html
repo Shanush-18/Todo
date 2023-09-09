@@ -1,0 +1,20 @@
+<div class="todo-header d-flex align-items-center justify-content-between">
+    <div class="title-wrapper">
+        <span class="material-icons title-icon">
+            checklist
+        </span>
+        <h4 class="m-0">Todo</h4>
+    </div>
+    <div class="header-routings d-flex">
+        <ng-container *ngFor="let item of routes">
+            <h6 [routerLink]="['/todo',item?.path]" routerLinkActive="active-path">{{item?.title}}</h6>
+        </ng-container>
+    </div>
+    <div>
+       <select name="theme-color" id="" [(ngModel)]="appTheme" (change)="applyTheme(appTheme)">
+            <option value="CLASSIC-BLUE">Classic Blue</option>
+            <option value="DEEP-FOREST">Deep Forest</option>
+            <option value="SUN-RISE">Sun Rise</option>
+       </select>
+    </div>
+</div>

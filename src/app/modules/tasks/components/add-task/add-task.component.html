@@ -1,0 +1,43 @@
+<div class="todo-popup-back-drop"></div>
+<div>
+    <div class="add-task-wrapper">
+        <form #form="ngForm">
+            <div class="add-task-header p-2">
+                <h5 class="m-0 fw-semibold mx-1"> {{id?'Update':'Add'}} Task</h5>
+            </div>
+            <div class="add-task-content">
+                <div class="row m-3">
+                    <div class="col-md-6 my-1 form-group">
+                        <label for="title">Title</label>
+                        <input id="title" class="form-control" type="text" [required]="true" name="title" ngModel>
+                    </div>
+                    <div class="col-md-6 my-1">
+                        <label for="Status">Status</label>
+                        <select id="Status" class="form-control" [required]="true" name="status" ngModel>
+                            <option value="Todo">Todo</option>
+                            <option value="In Progress">In Progress</option>
+                            <option value="Completed">Completed</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 my-1">
+                        <label for="startdate">Start Date</label>
+                        <input id="startdate" class="form-control" [required]="true" type="date" name="startDate"
+                            ngModel>
+                    </div>
+                    <div class="col-md-6 my-1">
+                        <label for="endDate">End Date</label>
+                        <input id="endDate" class="form-control" type="date" name="endDate" ngModel>
+                    </div>
+                    <div class="col-md-12">
+                        <label for="desc">Description</label>
+                        <textarea id="desc" class="form-control" type="text" name="description" ngModel></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="add-task-actions add-task-footer p-2" align="end">
+                <button (click)="onCancel()" class="secondary-btn"> Cancel </button>
+                <button [disabled]="form?.invalid" class="primary-btn" (click)="onSave()"> Save </button>
+            </div>
+        </form>
+    </div>
+</div>

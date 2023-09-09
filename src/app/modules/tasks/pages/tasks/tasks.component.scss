@@ -1,0 +1,30 @@
+
+.task-wrapper {    
+    .category {
+        width: 165px;
+        height: 150px;
+        margin: var(--padding-10);
+        border-radius: var(--padding-10);
+        background-color: #fff;
+        display: inline-block;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+        .card-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            cursor: pointer;
+            .material-icons{
+                color: #fff;
+                padding: var(--padding-10);
+                border-radius: 50%;
+            }
+            .category-title{
+                font-size: 15px;
+                font-weight: 500;
+                cursor: pointer;
+            }
+        }
+    }
+}

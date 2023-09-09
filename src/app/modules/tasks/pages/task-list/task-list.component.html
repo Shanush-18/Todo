@@ -1,0 +1,45 @@
+<ng-template todoPlaceholder></ng-template>
+<div class="container-fluid g-0 task-list">
+    <div class="task-list-wrapper">
+        <div class="title-wrapper d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center">
+                <span class="material-icons filled-bg-icon ">home</span>
+                <h6 class="m-0">{{title}}</h6>
+            </div>
+            <div>
+                <button (click)="addTask()">
+                    <span class="material-icons">add</span>
+                </button>
+            </div>
+        </div>
+        <div class="row pt-3" style="    background: #fff;
+        margin: 0;">
+            <ng-container *ngIf="tasks?.length! > 0;else noTodos">
+                <div *ngFor="let task of tasks" class="col-md-12 position-relative">
+                    <span class="material-icons delete-todo" (click)="onDelete(task?.id)">delete</span>
+                    <div class="m-2 mx-3 task-card">
+                        <div class="title-header d-flex align-items-center justify-content-between">
+                            <h5>
+                                <a (click)="addTask(task?.id)">{{task?.title}}</a>
+                            </h5>
+                            <span class="status"
+                                [ngClass]="{'todo':task?.status==='Todo','in-progress':task?.status==='In Progress','completed':task?.status==='Completed'}">
+                                <span class="dot"></span>{{task?.status}}</span>
+                        </div>
+                        <div class="task-content">
+                            <p>{{task?.description}}</p>
+                            Start Date:<span class="task-date">{{task?.startDate | date}}</span>&nbsp;
+                            <span *ngIf="task.endDate">End Date:<span class="task-date">{{task?.endDate |
+                                    date}}</span></span>
+                        </div>
+                    </div>
+                </div>
+            </ng-container>
+            <ng-template #noTodos>
+                <div class="d-flex align-items-center justify-content-center h-30">
+                    <h5>No {{title}} Todos</h5>
+                </div>
+            </ng-template>
+        </div>
+    </div>
+</div>

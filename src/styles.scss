@@ -1,0 +1,74 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+    background-color: #f3f3f340;
+    overflow: hidden;
+}
+
+:root {
+    --padding-10: 10px;
+    --primary-base: #19236c;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+}
+
+.primary-btn {
+    background-color: var(--primary-base);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+
+    &:disabled {
+        opacity: 0.3;
+        cursor: not-allowed;
+    }
+}
+
+.secondary-btn {
+    background-color: #f5f5f5;
+    color: #272729;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.fw-semibold {
+    font-weight: 600;
+}
+
+label {
+    font-size: 14px !important;
+    font-weight: 500;
+}
+
+
+
+.filled-bg-icon {
+    font-size: 19px;
+    background: var(--primary-base);
+    padding: 5px;
+    border-radius: 50%;
+    margin-right: 7px;
+    color: #fff;
+}
+
+.todo-subtitle {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.todo-title {
+    font-size: 15px;
+    font-weight: 500;
+}
